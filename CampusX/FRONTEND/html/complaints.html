@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CampusX Complaints</title>
+
+    <link rel="stylesheet"
+        href="../css/complaints.css">
+    <link rel="stylesheet"
+        href="../css/animation.css">
+   <link rel="stylesheet"
+        href="../css/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            CampusX
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="notes.html">
+                    <i class="fa-solid fa-book"></i>
+                    Notes
+                </a>
+            </li>
+
+            <li>
+                <a href="events.html">
+                    <i class="fa-solid fa-calendar"></i>
+                    Events
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="complaints.html">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Complaints
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Search -->
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input type="text"
+                id="searchComplaint"
+                placeholder="Search Complaints..." style="color: #f4f7fa;">
+
+        </div>
+
+
+
+        <!-- Header -->
+
+        <section class="complaints-header">
+
+            <h1>Complaint Management</h1>
+
+            <p>
+                Submit and track campus related issues.
+            </p>
+
+        </section>
+
+
+
+        <!-- Form -->
+
+        <section class="complaint-form-section">
+
+            <h2>Submit Complaint</h2>
+
+            <div class="complaint-form">
+
+                <input type="text"
+                    id="complaintTitle"
+                    placeholder="Complaint Title">
+
+                <input type="text"
+                    id="complaintDepartment"
+                    placeholder="Department">
+
+                <select id="complaintStatus">
+
+                    <option value="Pending">
+                        Pending
+                    </option>
+
+                    <option value="In Progress">
+                        In Progress
+                    </option>
+
+                    <option value="Resolved">
+                        Resolved
+                    </option>
+
+                </select>
+
+                <button id="addComplaintBtn">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    Submit
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Complaints Grid -->
+
+        <section class="complaints-grid"
+            id="complaintsContainer">
+
+        </section>
+
+    </main>
+
+
+
+    <script src="../js/complaints.js"></script>
+
+</body>
+
+</html>>

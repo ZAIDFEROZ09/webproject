@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    
+    display: flex;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background-color: #020617;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 50px;
+}
+
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li {
+    margin-bottom: 15px;
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sidebar-links li a:hover,
+.sidebar-links .active a {
+    background-color: #1e293b;
+    color: #3b82f6;
+}
+
+
+
+/* Main Content */
+
+.main-content {
+    min-height: 100vh;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 40px;
+
+    background-image:
+        url("../assets/event.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* Navbar */
+
+.search-box {
+    width: auto;
+    background-color: #1e293b;
+    padding: 14px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+
+
+/* Header */
+
+.events-header {
+    margin-top: 35px;
+    font-weight: bold;
+    font-size: 2 rem;
+}
+
+.events-header h1 {
+    font-size: 3rem;
+}
+
+.events-header p {
+    margin-top: 10px;
+    color: #f2f2f3;
+}
+
+
+
+/* Event Form */
+
+.event-form-section {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.event-form-section h2 {
+    margin-bottom: 20px;
+    size:  5rem;
+}
+
+.event-form {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    size: 12rem;
+}
+
+.event-form input,
+.event-form select {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.event-form button {
+    border: none;
+    border-radius: 12px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Events Grid */
+
+.events-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+
+/* Event Card */
+
+.event-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    background-color: #334155;
+}
+
+.event-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-top i {
+    font-size: 2rem;
+    color: #3b82f6;
+}
+
+.event-top span {
+    background-color: #334155;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.event-card h3 {
+    margin-top: 25px;
+}
+
+.event-card p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+.join-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3b82f6;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .events-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .event-form {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .sidebar {
+        width: 90px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .sidebar-links li a {
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 90px;
+        width: calc(100% - 90px);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .search-box {
+        width: 100%;
+    }
+
+}

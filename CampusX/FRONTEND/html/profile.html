@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CampusX Profile</title>
+
+    <link rel="stylesheet"
+        href="../css/profile.css">
+         <link rel="stylesheet"
+        href="../css/responsive.css">
+        <link rel="stylesheet"
+        href="../css/animation.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            CampusX
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="notes.html">
+                    <i class="fa-solid fa-book"></i>
+                    Notes
+                </a>
+            </li>
+
+            <li>
+                <a href="events.html">
+                    <i class="fa-solid fa-calendar"></i>
+                    Events
+                </a>
+            </li>
+
+            <li>
+                <a href="complaints.html">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Complaints
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <section class="profile-container">
+
+            <!-- Profile Card -->
+
+            <div class="profile-card">
+
+                <div class="profile-image">
+
+                    <i class="fa-solid fa-user"></i>
+
+                </div>
+
+                <h2 id="displayName">
+                    Muhammad Zaid
+                </h2>
+
+                <p id="displayDepartment">
+                    Computer Science Student
+                </p>
+
+            </div>
+
+
+
+            <!-- Stats -->
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+
+                    <h3></h3>
+
+                    <p>Uploaded Notes</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3></h3>
+
+                    <p>Joined Events</p>
+
+                </div>
+
+                <div class="stat-card">
+
+                    <h3></h3>
+
+                    <p>Complaints</p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Edit Form -->
+
+            <div class="edit-profile">
+
+                <h2>Edit Profile</h2>
+
+                <div class="profile-form">
+
+                    <input type="text"
+                        id="nameInput"
+                        placeholder="Enter Name">
+
+                    <input type="text"
+                        id="departmentInput"
+                        placeholder="Department">
+
+                    <button id="saveProfileBtn">
+
+                        Save Profile
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <script src="../js/profile.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background-color: #020617;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 50px;
+}
+
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li {
+    margin-bottom: 15px;
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sidebar-links li a:hover,
+.sidebar-links .active a {
+    background-color: #1e293b;
+    color: #3b82f6;
+}
+
+
+
+/* Main Content */
+
+.main-content {
+    min-height: 100vh;
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 40px;
+
+    background-image:
+        url("../assets/notes.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+/* Top Navbar */
+
+.top-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box {
+    width: 350px;
+    background-color: #1e293b;
+    padding: 14px 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-box input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.top-actions select {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1e293b;
+    color: white;
+}
+
+
+
+/* Notes Header */
+
+.notes-header {
+    margin-top: 35px;
+}
+
+.notes-header h1 {
+    font-size: 2.5rem;
+}
+
+.notes-header p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+
+
+/* Upload Section */
+
+.upload-section {
+    margin-top: 40px;
+}
+
+.upload-section h2 {
+    margin-bottom: 20px;
+}
+
+.upload-form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.upload-form input,
+.upload-form select {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background-color: #1e293b;
+    color: white;
+}
+
+.upload-form button {
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-form button:hover {
+    background-color: #2563eb;
+}
+
+
+
+/* Notes Grid */
+
+.notes-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+
+/* Note Card */
+
+.note-card {
+    background-color: #1e293b;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.note-card:hover {
+    transform: translateY(-5px);
+    background-color: #334155;
+}
+
+.note-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-top i {
+    font-size: 2rem;
+    color: #ef4444;
+}
+
+.note-top span {
+    background-color: #334155;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.note-card h3 {
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+.note-card p {
+    margin-top: 12px;
+    color: #94a3b8;
+}
+
+
+
+/* Buttons */
+
+.card-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.preview-btn,
+.download-btn {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.preview-btn {
+    background-color: #334155;
+    color: white;
+}
+
+.download-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.delete-btn{
+    width:100%;
+    padding:15px;
+    background:#ff4444;
+    border:none;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+    background:#cc0000;
+}
+/* Responsive */
+
+@media (max-width: 1000px) {
+
+    .notes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-form {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 850px) {
+
+    .sidebar {
+        width: 90px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .sidebar-links li a {
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 90px;
+        width: calc(100% - 90px);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .top-navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+}

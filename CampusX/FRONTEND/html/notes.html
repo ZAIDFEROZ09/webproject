@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CampusX Notes</title>
+
+    <link rel="stylesheet" href="../css/notes.css">
+    <link rel="stylesheet" href="../css/animation.css">
+             <link rel="stylesheet"
+        href="../css/responsive.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            CampusX
+        </div>
+
+        <ul class="sidebar-links">
+
+            <li>
+                <a href="dashboard.html">
+                    <i class="fa-solid fa-table-columns"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="notes.html">
+                    <i class="fa-solid fa-book"></i>
+                    Notes
+                </a>
+            </li>
+
+            <li>
+                <a href="events.html">
+                    <i class="fa-solid fa-calendar"></i>
+                    Events
+                </a>
+            </li>
+
+            <li>
+                <a href="complaints.html">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Complaints
+                </a>
+            </li>
+
+            <li>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                    Profile
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- Main Content -->
+
+    <main class="main-content">
+
+        <!-- Top Navbar -->
+
+        <header class="top-navbar">
+
+            <div class="search-box">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input type="text"
+                    id="searchInput"
+                    placeholder="Search Notes...">
+
+            </div>
+
+            <div class="top-actions">
+
+                <select id="categoryFilter">
+
+                    <option value="All">All Subjects</option>
+                    <option value="Web Engineering">Web Engineering</option>
+                    <option value="DSA">DSA</option>
+                    <option value="Database">Database</option>
+                    <option value="Calculus and Analytic Geometry">
+                        Calculus and Analytic Geometry
+                    </option>
+                    <option value="Differential Equations">
+                        Differential Equations
+                    </option>
+                    <option value="Operating Systems">
+                        Operating Systems
+                    </option>
+                    <option value="DCCN">
+                        DCCN
+                    </option>
+                    <option value="Cyber Security">
+                        Cyber Security
+                    </option>
+
+                </select>
+
+            </div>
+
+        </header>
+
+        <!-- Notes Header -->
+
+        <section class="notes-header">
+
+            <h1>
+                Notes Repository
+            </h1>
+
+            <p>
+                Access and share academic resources with students.
+            </p>
+
+        </section>
+
+        <!-- Upload Section -->
+
+        <section class="upload-section">
+
+            <h2>
+                Upload New Notes
+            </h2>
+
+            <div class="upload-form">
+
+                <input type="text"
+                    id="noteTitle"
+                    placeholder="Enter Note Title">
+
+                <input type="text"
+                    id="noteUploader"
+                    placeholder="Uploader Name">
+
+                <select id="noteCategory">
+
+                    <option value="Web Engineering">
+                        Web Engineering
+                    </option>
+
+                    <option value="DSA">
+                        DSA
+                    </option>
+
+                    <option value="Database">
+                        Database
+                    </option>
+
+                    <option value="Calculus and Analytic Geometry">
+                        Calculus and Analytic Geometry
+                    </option>
+
+                    <option value="Differential Equations">
+                        Differential Equations
+                    </option>
+
+                    <option value="Operating Systems">
+                        Operating Systems
+                    </option>
+
+                    <option value="DCCN">
+                        DCCN
+                    </option>
+
+                    <option value="Cyber Security">
+                        Cyber Security
+                    </option>
+
+                </select>
+
+                <button id="uploadBtn">
+
+                    <i class="fa-solid fa-upload"></i>
+
+                    Upload
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Notes Grid -->
+
+        <section
+            class="notes-grid"
+            id="notesContainer">
+
+            <!-- Notes will appear here dynamically -->
+
+        </section>
+
+    </main>
+
+    <script src="../js/notes.js"></script>
+
+</body>
+
+</html>

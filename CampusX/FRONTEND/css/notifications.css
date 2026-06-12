@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    background-color: #0f172a;
+    color: white;
+}
+
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background-color: #020617;
+    padding: 30px 20px;
+    position: fixed;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 50px;
+}
+
+.sidebar-links {
+    list-style: none;
+}
+
+.sidebar-links li {
+    margin-bottom: 15px;
+}
+
+.sidebar-links li a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: #cbd5e1;
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.sidebar-links li a:hover,
+.sidebar-links .active a {
+    background-color: #1e293b;
+    color: #3b82f6;
+}
+
+
+
+/* Main */
+
+.main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+    padding: 40px;
+}
+
+
+
+/* Header */
+
+.notification-header h1 {
+    font-size: 2.7rem;
+}
+
+.notification-header p {
+    margin-top: 10px;
+    color: #94a3b8;
+}
+
+
+
+/* Count */
+
+.notification-count {
+    margin-top: 30px;
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 250px;
+}
+
+.notification-count i {
+    color: #3b82f6;
+    font-size: 1.5rem;
+}
+
+.notification-count span {
+    font-size: 1.4rem;
+}
+
+
+
+/* Notifications */
+
+.notifications-container {
+    margin-top: 35px;
+    display: grid;
+    gap: 20px;
+}
+
+.notification-card {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #3b82f6;
+}
+
+.notification-card p {
+    color: #cbd5e1;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 850px) {
+
+    .sidebar {
+        width: 90px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .sidebar-links li a {
+        justify-content: center;
+    }
+
+    .main-content {
+        margin-left: 90px;
+        width: calc(100% - 90px);
+    }
+
+}
