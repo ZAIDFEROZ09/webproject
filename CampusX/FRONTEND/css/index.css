@@ -224,7 +224,7 @@ body {
 
 .dashboard-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -394,10 +394,11 @@ body {
 }
 
 .about-container {
+.about-container {
     display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
 }
 
 .about-text {
@@ -418,13 +419,17 @@ body {
 .about-text p {
     margin-top: 15px;
     color: #e2e8f0;
+    background: rgba(30, 41, 59, 0.75);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
 }
 
 .about-boxes {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .about-card {
@@ -432,6 +437,12 @@ body {
     padding: 20px;
     border-radius: 12px;
     transition: 0.3s;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.08);
+
 }
 
 .about-card:hover {
