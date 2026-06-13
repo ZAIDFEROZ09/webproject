@@ -179,11 +179,11 @@ body {
 }
 
 .tag {
-    background: rgba(59, 130, 246, 0.25);
-    color: #93c5fd;
+    background: rgba(2, 52, 133, 0.25);
+    color:white;
     padding: 8px 16px;
     border-radius: 30px;
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
