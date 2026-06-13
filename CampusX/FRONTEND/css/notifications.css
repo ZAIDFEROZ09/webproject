@@ -7,7 +7,7 @@
 
 body {
     display: flex;
-    background-color: #0f172a;
+    min-height: 100vh;
     color: white;
 }
 
@@ -18,9 +18,13 @@ body {
 .sidebar {
     width: 260px;
     min-height: 100vh;
-    background-color: #020617;
     padding: 30px 20px;
     position: fixed;
+
+    background: rgba(2, 6, 23, 0.85);
+    backdrop-filter: blur(12px);
+
+    border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 .logo {
@@ -63,6 +67,15 @@ body {
     margin-left: 260px;
     width: calc(100% - 260px);
     padding: 40px;
+       background-image:
+        linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+        url("../assets/notification.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
 
@@ -81,16 +94,17 @@ body {
 
 
 /* Count */
-
 .notification-count {
     margin-top: 30px;
-    background-color: #1e293b;
     padding: 20px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     gap: 15px;
     width: 250px;
+
+    background: rgba(30,41,59,0.75);
+    backdrop-filter: blur(10px);
 }
 
 .notification-count i {
@@ -110,13 +124,23 @@ body {
     margin-top: 35px;
     display: grid;
     gap: 20px;
+    
 }
 
 .notification-card {
-    background-color: #1e293b;
     padding: 20px;
     border-radius: 15px;
     border-left: 5px solid #3b82f6;
+
+    background: rgba(30,41,59,0.75);
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s;
+}
+
+.notification-card:hover {
+    transform: translateY(-5px);
+    background: rgba(51,65,85,0.85);
 }
 
 .notification-card p {

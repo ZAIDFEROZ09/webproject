@@ -60,9 +60,18 @@ body {
 /* Main Content */
 
 .main-content {
+    min-height: 100vh;
     margin-left: 260px;
     width: calc(100% - 260px);
-    padding: 30px;
+    padding: 40px;
+
+    background-image:
+        url("../assets/lost\ and\ found.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 
@@ -163,11 +172,13 @@ body {
 
 /* Card */
 
+
 .item-card {
     background-color: #1e293b;
     border-radius: 20px;
     overflow: hidden;
     transition: 0.3s;
+    max-width: 320px;
 }
 
 .item-card:hover {
@@ -175,52 +186,64 @@ body {
     background-color: #334155;
 }
 
+/* Image */
 .item-card img {
     width: 100%;
-    height: 220px;
-    object-fit: cover;
+    height: 180px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #0f172a;
+    padding: 8px;
+    display: block;
 }
 
+/* Content */
 .item-info {
-    padding: 25px;
+    padding: 18px;
 }
 
 .category {
     background-color: #334155;
-    padding: 7px 14px;
+    padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.8rem;
 }
 
 .item-info h3 {
-    margin-top: 20px;
+    margin-top: 15px;
+    font-size: 1.2rem;
 }
 
 .item-info p {
-    margin-top: 12px;
+    margin-top: 10px;
     color: #cbd5e1;
-    line-height: 1.7;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .item-meta {
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
     color: #94a3b8;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
 }
 
 .item-info button {
     width: 100%;
-    margin-top: 25px;
-    padding: 12px;
+    margin-top: 20px;
+    padding: 10px;
     border: none;
     border-radius: 10px;
     background-color: #3b82f6;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 
+.item-info button:hover {
+    background-color: #2563eb;
+}
 
 
 /* Responsive */

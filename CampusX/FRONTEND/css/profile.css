@@ -66,7 +66,7 @@ body {
     padding: 40px;
 
     background-image:
-        url("../assets/profile.png");
+        url("../assets/profile.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -86,7 +86,7 @@ body {
 }
 
 .profile-card {
-    background-color: #1e293b;
+    background-color: #0d0f11;
     padding: 40px;
     border-radius: 25px;
     text-align: center;
@@ -105,7 +105,7 @@ body {
 
 .profile-image i {
     font-size: 3rem;
-    color: #3b82f6;
+    color: #005bee;
 }
 
 .profile-card h2 {
@@ -114,7 +114,7 @@ body {
 
 .profile-card p {
     margin-top: 10px;
-    color: #94a3b8;
+    color: #075acf;
 }
 
 
@@ -128,7 +128,7 @@ body {
 }
 
 .stat-card {
-    background-color: #1e293b;
+    background-color: #071d41;
     padding: 30px;
     border-radius: 20px;
     text-align: center;

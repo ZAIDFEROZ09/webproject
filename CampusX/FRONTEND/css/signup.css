@@ -7,27 +7,28 @@
 
 body {
     min-height: 100vh;
-    background-color: #0f172a;
     color: #f8fafc;
-}
 
+}
 /* Main Container */
 
 .signup-container {
     width: 100%;
     min-height: 100vh;
     display: flex;
+     background-image:
+url("../assets/signupandlogin.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /* Left Side */
 
 .signup-left {
     width: 50%;
-    background: linear-gradient(
-            rgba(15, 23, 42, 0.7),
-            rgba(15, 23, 42, 0.9)
-        ),
-        url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop");
+   
     background-size: cover;
     background-position: center;
     display: flex;
