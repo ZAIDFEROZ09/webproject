@@ -406,14 +406,16 @@ body {
 }
 
 .about-text span {
-    color: #60a5fa;
+    color: #2206f4;
     font-weight: 600;
+    font-size: 1.7rem;
 }
 
 .about-text h2 {
     font-size: 2.4rem;
     margin-top: 10px;
     font-weight: 800;
+    
 }
 
 .about-text p {
@@ -454,6 +456,7 @@ body {
 .contact-section {
     padding: 100px 8%;
     background: transparent;
+    font-weight: bold;
 }
 .contact-container {
     display: flex;
@@ -468,13 +471,15 @@ body {
 }
 
 .contact-info h2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 800;
 }
 
 .contact-info p {
     margin-top: 10px;
     color: #e2e8f0;
+    font-weight: bold;
+    font-size: 2rem;
 }
 
 .contact-item {
@@ -483,7 +488,8 @@ body {
     align-items: center;
     gap: 15px;
     color: #e2e8f0;
-    font-weight: 500;
+    font-weight: bold;
+    font-size: 1.8rem;
 }
 
 .contact-item i {
@@ -513,12 +519,15 @@ body {
 
 .footer-content p {
     margin-top: 10px;
-    color: #94a3b8;
+    color: #0b0b0b;
+    FONT-WEIGHT: BOLD;
+    FONT-SIZE: 1.2REM;
 }
 
 .copyright {
     margin-top: 25px;
-    color: #64748b;
+    color: #000000;
+    font-weight: bold;
 }
 
 /* RESPONSIVE */
